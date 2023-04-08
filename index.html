@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Diplom n.2 - Maksim Razboynikov</title>
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -97,11 +97,7 @@
     <div class="middle">
       <main class="stories">
         <article class="story">
-          <img
-            src="images/last-post1.jpg"
-            alt="10 мест ради которых стоит проснуться"
-            class="article-photo"
-          />
+          <img src="images/last-post1.jpg" alt="10 мест ради которых стоит проснуться" class="article-photo" />
           <div class="article-text">
             <ul class="article-tag">
               <li><a href="#0">Travel</a></li>
@@ -330,7 +326,7 @@
           <picture>
             <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)" />
             <source srcset="images/shop-item-tablet1.jpg" media="(max-width: 1200px)" />
-            <img class="products-photo" src="images/shop-item-desk1.jpg" alt="" />
+            <img class="products-photo" src="images/shop-item-desk1.jpg" alt="Набор из подушек" />
           </picture>
 
           <div class="products-info">
@@ -353,7 +349,7 @@
           <picture>
             <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)" />
             <source srcset="images/shop-item-tablet2.jpg" media="(max-width: 1200px)" />
-            <img class="products-photo" src="images/shop-item-desk2.jpg" alt="" />
+            <img class="products-photo" src="images/shop-item-desk2.jpg" alt="Рукодельная кукла" />
           </picture>
           <div class="products-info">
             <h2><a href="#0">Кукла «Зайчик»</a></h2>
@@ -374,7 +370,7 @@
           <picture>
             <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)" />
             <source srcset="images/shop-item-tablet3.jpg" media="(max-width: 1200px)" />
-            <img class="products-photo" src="images/shop-item-desk3.jpg" alt="" />
+            <img class="products-photo" src="images/shop-item-desk3.jpg" alt="Рамка для украшения" />
           </picture>
           <div class="products-info">
             <h2><a href="#0">Шестиугольная рамка</a></h2>
@@ -419,18 +415,32 @@
       <a href="#0" class="copyright">Copyright © 2009-2019 City Blog LLC.</a>
     </footer>
 
-    <section class="popup">
+    <section class="popup popup_hidden">
       <div class="popup-content">
         <h2 class="popup-title">Ваш фидбек</h2>
-        <p class="popup-text">Как часто вы заходите на сайт? </p>
+        <p class="popup-text">Как часто вы заходите на сайт?</p>
 
-        <form action=""> </form>
+        <form class="popup-choise" action="https://site.ru/xxx.php">
+          <label for="frequency" class="visually-hidden">Как часто?</label>
+          <input type="text" name="frequency" id="frequency" placeholder="Почти каждый день" />
+          <button class="choise-button">
+            <span class="visually-hidden">выбор</span>
+          </button>
+        </form>
 
         <p class="popup-text">Вы подписаны на e-mail рассылку?</p>
 
+        <form class="popup-form" action="https://site.ru/xxx.php">
+          <input type="radio" name="subscriber" id="subscriber1" checked /><label for="subscriber1">Да</label>
+          <input type="radio" name="subscriber" id="subscriber2" /><label for="subscriber2"> Нет</label>
+        </form>
+
         <p class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
 
-        <textarea name="" id="" cols="30" rows="10">Может, больше рецептов?</textarea>
+        <form class="popup-form-text" action="https://site.ru/xxx.php">
+          <textarea name="info" id="info" cols="30" rows="10">Может, больше рецептов?</textarea>
+        </form>
+
         <button class="subscribe-button" title="Отправить">Отправить</button>
       </div>
     </section>
