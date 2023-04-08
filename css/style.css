@@ -664,8 +664,6 @@ address {
   display: inline-block;
 }
 
-
-
 @media (min-width: 641px) and (max-width: 1200px) {
   h1 {
     font-weight: bold;
@@ -915,7 +913,6 @@ address {
     max-width: 100%;
   }
 
-
   .menu {
     display: none;
   }
@@ -1093,7 +1090,6 @@ address {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
-
   .trends-container {
     width: calc(50% - 4px);
     min-height: 231px;
@@ -1112,23 +1108,21 @@ address {
   .trends-container:nth-child(-n + 2) {
     margin-bottom: 4px;
   }
-
 }
 
 /* Окно pop-up */
 
 .popup {
-background-color: rgba(0, 0, 0, 0.6);
-position:fixed;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: 20;
-display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
 }
 
 .popup-content {
@@ -1139,15 +1133,13 @@ display: none;
   flex-direction: column;
   justify-content: space-between;
   padding: 52px 30px 52px 30px;
-  
 }
 
 .popup-title {
   font-size: 20px;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 0px;
-
+  margin-bottom: 20px;
 }
 
 .popup-title:after {
@@ -1160,4 +1152,55 @@ display: none;
 
 .popup-text {
   font-size: 13px;
+}
+
+.popup-form {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.popup-choise {
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.choise-button {
+  background-image: url(../svg/form-arrows.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+  width: 48px;
+  height: 48px;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+textarea {
+  background-color: #f3f7f5;
+}
+
+.popup_hidden {
+  display: none;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .popup-content {
+    width: 390px;
+    min-height: 595px;
+    padding: 54px 22px 54px 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .popup-content {
+    width: 330px;
+    min-height: 545px;
+    padding: 24px 30px 242px 30px;
+  }
 }
