@@ -97,7 +97,11 @@
     <div class="middle">
       <main class="stories">
         <article class="story">
-          <img src="images/last-post1.jpg" alt="10 мест ради которых стоит проснуться" class="article-photo" />
+          <img
+            src="images/last-post1.jpg"
+            alt="10 мест ради которых стоит проснуться"
+            class="article-photo"
+          />
           <div class="article-text">
             <ul class="article-tag">
               <li><a href="#0">Travel</a></li>
@@ -114,8 +118,6 @@
             </p>
           </div>
         </article>
-
-        <div class="borders"></div>
 
         <article class="story">
           <img src="images/last-post2.jpg" alt="Йога для начинающих" class="article-photo" />
@@ -136,8 +138,6 @@
           </div>
         </article>
 
-        <div class="borders"></div>
-
         <article class="story">
           <img src="images/last-post3.jpg" alt="Лучшие музыкальные фестивали" class="article-photo" />
           <div class="article-text">
@@ -151,13 +151,10 @@
             </p>
             <p>
               Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
-              <br />
-              Мы составили список лучших летних фестивалей по всему миру.
             </p>
+            <p class="article-space">Мы составили список лучших летних фестивалей по всему миру. </p>
           </div>
         </article>
-
-        <div class="borders"></div>
 
         <article class="story">
           <img src="images/last-post4.jpg" alt="Наукоёмкий подход к кулинарии" class="article-photo" />
@@ -178,8 +175,6 @@
           </div>
         </article>
 
-        <div class="borders"></div>
-
         <article class="story">
           <img src="images/last-post5.jpg" alt="Делаем модные принты" class="article-photo" />
           <div class="article-text">
@@ -199,7 +194,6 @@
             </p>
           </div>
         </article>
-        <div class="borders mobile"></div>
       </main>
 
       <aside>
@@ -416,33 +410,46 @@
     </footer>
 
     <section class="popup popup_hidden">
-      <div class="popup-content">
+      <form class="popup-content">
+        <button class="close-icon"></button>
         <h2 class="popup-title">Ваш фидбек</h2>
-        <p class="popup-text">Как часто вы заходите на сайт?</p>
 
-        <form class="popup-choise" action="https://site.ru/xxx.php">
+        <div class="popup-row popup-list" action="https://site.ru/xxx.php">
+          <span class="popup-hint">Как часто вы заходите на сайт?</span>
           <label for="frequency" class="visually-hidden">Как часто?</label>
-          <input type="text" name="frequency" id="frequency" placeholder="Почти каждый день" />
-          <button class="choise-button">
+          <select id="frequency">
+            <option selected>Почти каждый день</option>
+            <option>Раз в несколько дней</option>
+            <option>Раз в несколько недель</option>
+            <option>Несколько раз в год</option>
+          </select>
+          <button class="select-icon">
             <span class="visually-hidden">выбор</span>
           </button>
-        </form>
+        </div>
 
-        <p class="popup-text">Вы подписаны на e-mail рассылку?</p>
+        <div class="popup-row popup-radio" action="https://site.ru/xxx.php">
+          <span class="popup-hint">Вы подписаны на e-mail рассылку?</span>
+          <fieldset>
+            <label for="subscriber1" class="form-control">
+              <input type="radio" name="subscriber" id="subscriber1" checked />
+              <span class="circle">Да</span>
+            </label>
+            <label for="subscriber2" class="form-control">
+              <input type="radio" name="subscriber" id="subscriber2" />
 
-        <form class="popup-form" action="https://site.ru/xxx.php">
-          <input type="radio" name="subscriber" id="subscriber1" checked /><label for="subscriber1">Да</label>
-          <input type="radio" name="subscriber" id="subscriber2" /><label for="subscriber2"> Нет</label>
-        </form>
+              <span class="circle">&nbsp; Нет</span>
+            </label>
+          </fieldset>
+        </div>
 
-        <p class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-
-        <form class="popup-form-text" action="https://site.ru/xxx.php">
+        <div class="popup-row popup-textarea" action="https://site.ru/xxx.php">
+          <span class="popup-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
           <textarea name="info" id="info" cols="30" rows="10">Может, больше рецептов?</textarea>
-        </form>
+        </div>
 
-        <button class="subscribe-button" title="Отправить">Отправить</button>
-      </div>
+        <button class="form-button" title="Отправить">Отправить</button>
+      </form>
     </section>
   </body>
 </html>
