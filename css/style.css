@@ -1112,10 +1112,6 @@ address {
 
 /* Окно pop-up */
 
-.popup_hidden {
-  display: none;
-}
-
 .popup {
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -1335,4 +1331,9 @@ textarea:focus {
     top: -35px;
     right: 0;
   }
+}
+
+
+.popup_hidden {
+  display: none;
 }
